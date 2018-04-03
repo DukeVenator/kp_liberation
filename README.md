@@ -107,14 +107,6 @@ The area has fallen to the enemy, and it is up to you to take it back. Embark on
 * Accomplish meaningful secondary objectives that will benefit your progression.
 * Never lose your progress with the built-in server-side save system.
 
-## Public Servers
-
-### KP Liberation by www.killahpotatoes.de
-* IP: 213.133.110.170
-* Port: 2302
-* Needed Mods: None
-* Admin: [jus61](https://www.killahpotatoes.de/index.php?user/2-jus61/)
-
 ## Needed Mods
 These mods are needed if you want to use the prepackaged missionfiles from the release tab or Steam Workshop.
 You can play every map without any mods (only the maps themself) if you set the preset to custom in the file `kp_liberation_config`.
@@ -266,6 +258,15 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ### 0.97 (in development)
 * Added: Refactored code for the whole framework
 * Removed: Old code from the whole framework
+
+### 0.963a (planned for 11th April 2018 as "legacy support" release)
+* Added: Action to raise/lower object while building. Thanks to [darrell-aevum](https://github.com/darrell-aevum)
+* Added: 2 RHS mag classnames to arsenal allowed extension list. Thanks to [madpat3](https://github.com/madpat3)
+* Added: Functionality to save/load mission parameters. Thanks to [veteran29](https://github.com/veteran29)
+* Added: Presets for: RDS Civilians, Project OPFOR SLA and Project OPFOR RACS. Thanks to [PSYKO-nz](https://github.com/PSYKO-nz)
+* Added: Automatic mission pbo build tool (available on GitHub). Thanks to [Dahlgren](https://github.com/Dahlgren) and [veteran29](https://github.com/veteran29)
+* Added: Tanks DLC classnames for presets.
+* Fixed: Placement of buildings after save/load. Thanks to [Cre8or](https://github.com/Cre8or)
 
 ### 0.963 (05th January 2018)
 * Added: Some missing RHS vehicles for the ACE medical system.
