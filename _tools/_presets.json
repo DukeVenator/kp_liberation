@@ -116,6 +116,19 @@
             "KP_liberation_arsenal": 0
         }
     },
+	{
+        "sourceFolder": "kp_liberation.australia",
+        "missionName": "kp_liberation",
+        "map": "australia",
+        "configFile": "kp_liberation_config.sqf",
+        "variables": {
+            "KP_liberation_preset_blufor": 9,
+            "KP_liberation_preset_opfor": 5,
+            "KP_liberation_preset_resistance": 4,
+            "KP_liberation_preset_civilians": 1,
+            "KP_liberation_arsenal": 0
+        }
+    },
     {
         "sourceFolder": "kp_liberation.Tanoa",
         "missionName": "kp_liberation",
