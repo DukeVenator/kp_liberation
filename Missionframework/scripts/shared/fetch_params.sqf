@@ -45,6 +45,9 @@ KP_liberation_restart = ["ServerRestart",0] call F_getSaveableParam;
 KP_liberation_cr_param_buildings = ["CR_Building",0] call F_getSaveableParam;
 KP_liberation_respawn_cooldown = ["RespawnCooldown",900] call F_getSaveableParam;
 KP_liberation_clear_cargo = ["ClearCargo",1] call F_getSaveableParam;
+// BIS revive
+KP_liberation_bis_revive_mode = ["ReviveMode",1] call F_getSaveableParam;
+KP_liberation_bis_revive_mode call BIS_fnc_paramReviveMode;
 
 if (GRLIB_fatigue < 0.1) then {GRLIB_fatigue = false} else {GRLIB_fatigue = true};
 if (GRLIB_introduction == 1) then {GRLIB_introduction = true} else {GRLIB_introduction = false};

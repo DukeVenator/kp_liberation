@@ -21,6 +21,10 @@ if (!isDedicated && !hasInterface && isMultiplayer) then {
 };
 
 if (!isDedicated && hasInterface) then {
+	if(KP_liberation_bis_revive_mode == 0) then {
+		player call bis_fnc_disableRevive;
+	};
+	
 	waitUntil {alive player};
 	if (debug_source != name player) then {debug_source = name player};
 	[] call compileFinal preprocessFileLineNumbers "scripts\client\init_client.sqf";
