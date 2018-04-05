@@ -11,7 +11,6 @@ while {(([_startpos, 500, GRLIB_side_friendly] call F_getUnitsCount) > 0) || (su
 private _incDir = (markerPos _sector) getDir _startpos;
 private _incString = "unknown";
 
-// Have to check if a switch with value range cases work in sqf as this looks horrible. (not at my own pc currently)
 if (_incDir < 23) then {
 	_incString = "N";
 } else {
@@ -61,19 +60,21 @@ _waypoint setWaypointBehaviour "AWARE";
 _waypoint setWaypointCombatMode "YELLOW";
 _waypoint setWaypointCompletionRadius 30;
 _waypoint = _grp addWaypoint [markerpos _sector, 200];
-_waypoint setWaypointSpeed "LIMITED";
+_waypoint setWaypointSpeed "NORMAL";
 _waypoint setWaypointType "SAD";
 _waypoint = _grp addWaypoint [markerpos _sector, 200];
-_waypoint setWaypointSpeed "LIMITED";
+_waypoint setWaypointSpeed "NORMAL";
 _waypoint setWaypointType "SAD";
 _waypoint = _grp addWaypoint [markerpos _sector, 200];
-_waypoint setWaypointSpeed "LIMITED";
+_waypoint setWaypointSpeed "NORMAL";
 _waypoint setWaypointType "SAD";
 _waypoint = _grp addWaypoint [markerpos _sector, 200];
-_waypoint setWaypointSpeed "LIMITED";
+_waypoint setWaypointSpeed "NORMAL";
 _waypoint setWaypointType "CYCLE";
 
 _spawnedGroups pushBack _grp;
+
+sleep 30;
 
 if ((random 100) <= 25) then {
 	_vehicle = (selectRandom KP_liberation_guerilla_vehicles) createVehicle _startpos;
@@ -83,6 +84,7 @@ if ((random 100) <= 25) then {
 
 	_waypoint = _grp addWaypoint [markerpos _sector, 100];
 	_waypoint setWaypointType "MOVE";
+	_waypoint setWaypointSpeed "LIMITED";
 	_waypoint setWaypointBehaviour "AWARE";
 	_waypoint setWaypointCombatMode "YELLOW";
 	_waypoint setWaypointCompletionRadius 30;
@@ -113,7 +115,7 @@ private _strengthChanged = false;
 		{
 			if (alive _x) then {
 				deleteVehicle _x;
-				KP_liberation_guerilla_strength = KP_liberation_guerilla_strength + 1;
+				KP_liberation_guerilla_strength = KP_liberation_guerilla_strength + 2;
 				_strengthChanged = true;
 			};
 		} forEach (units _x);

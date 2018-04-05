@@ -161,15 +161,18 @@ class Missions
 * Added: Automatic mission pbo build tool (available on GitHub). Thanks to [Dahlgren](https://github.com/Dahlgren) and [veteran29](https://github.com/veteran29)
 * Added: Tanks DLC classnames for presets.
 * Added: Group diag output for serverlog.
-* Added: Debug output for group count and amount of active scripts. Liberation starts with [13,70,0,1].
+* Added: Debug output for group count and amount of active scripts. Liberation starts with [13,70,0,1] and may rise to [70,70,0,1].
 * Added: Notification for incoming guerilla forces when attacking a sector.
 * Added: Vehicle chance for guerilla forces who approach a sector.
+* Added: Traditional Chinese localization. Thanks to [KOEI5113](https://github.com/KOEI5113)
 * Added: Aus map port 
 * Removed: Some old scripts which aren't needed anymore.
 * Tweaked: All `spawn compileFinal preprocessFileLineNumbers` replaced with `execVM`.
 * Tweaked: All `createGroup` now with activated `deleteWhenEmpty`.
-* Tweaked: All `BIS_fnc_relPos` replaced with `getRelPos`.
+* Tweaked: All `BIS_fnc_relPos` replaced with `getPos`.
+* Tweaked: Guerilla forces event chances, strength gain values and unit amounts.
 * Fixed: Placement of buildings after save/load. Thanks to [Cre8or](https://github.com/Cre8or)
+* Fixed: Sometimes helicopters exploded when spawning on the deck of the USS Freedom.
 
 ### 0.963 (05th January 2018)
 * Added: Some missing RHS vehicles for the ACE medical system.
