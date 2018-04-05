@@ -14,17 +14,17 @@ if (isDedicated) then {debug_source = "Server";} else {debug_source = name playe
 
 if (isServer) then {
 	[] call compileFinal preprocessFileLineNumbers "scripts\server\init_server.sqf";
+	
+	if(KP_liberation_bis_revive_mode == 1) then {
+		[] call bis_fnc_reviveInit;
+	};
 };
 
 if (!isDedicated && !hasInterface && isMultiplayer) then {
 	execVM "scripts\server\offloading\hc_manager.sqf";
 };
 
-if (!isDedicated && hasInterface) then {
-	if(KP_liberation_bis_revive_mode == 0) then {
-		player call bis_fnc_disableRevive;
-	};
-	
+if (!isDedicated && hasInterface) then {	
 	waitUntil {alive player};
 	if (debug_source != name player) then {debug_source = name player};
 	[] call compileFinal preprocessFileLineNumbers "scripts\client\init_client.sqf";

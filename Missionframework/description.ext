@@ -1,4 +1,4 @@
-ReviveMode = 1;
+ReviveMode = 0;
 
 respawn = 3;
 respawndelay = 5;
