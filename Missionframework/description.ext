@@ -1,5 +1,3 @@
-ReviveMode = 0;
-
 respawn = 3;
 respawndelay = 5;
 respawnButton = 1;
