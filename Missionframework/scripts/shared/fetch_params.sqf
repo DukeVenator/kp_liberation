@@ -46,6 +46,17 @@ KP_liberation_cr_param_buildings = ["CR_Building",0] call F_getSaveableParam;
 KP_liberation_respawn_cooldown = ["RespawnCooldown",900] call F_getSaveableParam;
 KP_liberation_clear_cargo = ["ClearCargo",1] call F_getSaveableParam;
 
+KP_liberation_bis_revive_mode = ["ReviveMode",1] call F_getSaveableParam;
+// Setup BIS revive params
+KP_liberation_bis_revive_mode call bis_fnc_paramReviveMode;
+(["ReviveDuration",6] call F_getSaveableParam) call bis_fnc_paramReviveDuration;
+(["ReviveRequiredTrait",1] call F_getSaveableParam) call bis_fnc_paramReviveRequiredTrait;
+(["ReviveMedicSpeedMultiplier",1] call F_getSaveableParam) call bis_fnc_paramReviveMedicSpeedMultiplier;
+(["ReviveRequiredItems",1] call F_getSaveableParam) call bis_fnc_paramReviveRequiredItems;
+(["UnconsciousStateMode",0] call F_getSaveableParam) call bis_fnc_paramReviveUnconsciousStateMode;
+(["ReviveBleedOutDuration",180] call F_getSaveableParam) call bis_fnc_paramReviveBleedOutDuration;
+(["ReviveForceRespawnDuration",10] call F_getSaveableParam) call bis_fnc_paramReviveForceRespawnDuration;
+
 if (GRLIB_fatigue < 0.1) then {GRLIB_fatigue = false} else {GRLIB_fatigue = true};
 if (GRLIB_introduction == 1) then {GRLIB_introduction = true} else {GRLIB_introduction = false};
 if (GRLIB_deployment_cinematic == 1) then {GRLIB_deployment_cinematic = true} else {GRLIB_deployment_cinematic = false};
