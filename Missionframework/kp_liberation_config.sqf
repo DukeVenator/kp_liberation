@@ -41,7 +41,8 @@ If you want to change a preset, it's recommended to set all four presets to 0 an
 6 = RHS USAF (Woodland)
 7 = RHS USAF (Desert)
 8 = RHS AFRF (VDV/MSV)
-9 = Australia  */
+7 = RHS USAF (Desert)  */
+9 = Australia Preset  */
 KP_liberation_preset_blufor = 0;
 
 /* OPFOR preset:
@@ -279,8 +280,6 @@ KP_liberation_allowed_items_extension = [
 	"BWA3_acc_LLM01_flash_underbarrel",
 	"BWA3_acc_LLM01_laser_underberrel",
 	"BWA3_acc_LLM01_laser_underbarrel",
-	"BWA3_Pzf3_Used",
-	"BWA3_RGW90_Used",
 	"UK3CB_BAF_AT4_CS_AP_Mag",
 	"UK3CB_BAF_Javelin_Launcher",
 	"sma_spitfire_03_rds_low_ard_red",
@@ -290,8 +289,7 @@ KP_liberation_allowed_items_extension = [
 	"ACE_Chemlight_Shield_Yellow",
 	"ACE_Chemlight_Shield_Green",
 	"ACE_Chemlight_Shield_Red",
-	"ACE_ReserveParachute",
-	"ACE_launch_NLAW_Used_F"
+	"ACE_ReserveParachute"
 ];
 
 /* - Configuration settings for crates transported by vehicles.
@@ -458,6 +456,23 @@ vehicle_refuel_sources = [
 	"rhsusf_M978A4_BKIT_usarmy_wd",
 	"RHS_Ural_Fuel_VDV_01"
 ];
+
+// Classnames of artillery vehicles or statics which should be linked to the support system. (Currently deactivated)
+/*KP_liberation_artySupp = [
+	"B_Mortar_01_F",
+	"B_T_Mortar_01_F",
+	"B_MBT_01_arty_F",
+	"B_T_MBT_01_arty_F",
+	"B_MBT_01_mlrs_F",
+	"B_T_MBT_01_mlrs_F",
+	"rhsusf_m109_usarmy",
+	"rhsusf_m109d_usarmy",
+	"RHS_M252_WD",
+	"RHS_M252_D",
+	"RHS_M119_WD",
+	"RHS_M119_D",
+	"UK3CB_BAF_Static_L16_Deployed_MTP"
+];*/
 
 // Classnames of boats, so they can be built on water.
 boats_names = [
