@@ -15,11 +15,11 @@ FOB_typename = "Land_Cargo_HQ_V1_F";									// This is the main FOB HQ building
 FOB_box_typename = "B_Slingload_01_Cargo_F";							// This is the FOB as a container. 																										Default is "B_Slingload_01_Cargo_F".
 FOB_truck_typename = "B_Truck_01_box_F";								// This is the FOB as a vehicle.																										Default is "B_Truck_01_box_F".
 Arsenal_typename = "B_supplyCrate_F";									// This is the virtual arsenal as portable supply crates.  																				Default is "B_supplyCrate_F".
-Respawn_truck_typename = "B_Truck_01_medical_F";						// This is the mobile respawn (and medical) truck. 																						Default is "B_Truck_01_medical_F".
+Respawn_truck_typename = "rhsusf_M1085A1P2_B_D_Medical_fmtv_usarmy";	// This is the mobile respawn (and medical) truck. 																						Default is "B_Truck_01_medical_F".
 huron_typename = "B_Heli_Transport_03_unarmed_F";						// This is Spartan 01, a multipurpose mobile respawn as a helicopter. 																	Default is "B_Heli_Transport_03_unarmed_F".
 crewman_classname = "B_crew_F";											// This defines the crew for vehicles. 																									Default is "B_crew_F".
 pilot_classname = "B_Helipilot_F";										// This defines the pilot for helicopters. 																								Default is "B_Helipilot_F".
-KP_liberation_little_bird_classname = "B_Heli_Light_01_F"; 				// These are the little birds which spawn on the Freedom or at Chimera base.															Default is "B_Heli_Light_01_F".
+KP_liberation_little_bird_classname = RHS_MELB_MH6M"; 					// These are the little birds which spawn on the Freedom or at Chimera base.															Default is "B_Heli_Light_01_F".
 KP_liberation_boat_classname = "B_Boat_Transport_01_F"; 				// These are the boats which spawn at the stern of the Freedom.																			Default is "B_Boat_Transport_01_F".
 KP_liberation_truck_classname = "B_Truck_01_transport_F";				// These are the trucks which are used in the logistic convoy system.																	Default is "B_Truck_01_transport_F".
 KP_liberation_small_storage_building = "ContainmentArea_02_sand_F";		// A small storage area for resources.																									Default is "ContainmentArea_02_sand_F".
@@ -28,9 +28,9 @@ KP_liberation_recycle_building = "Land_CarService_F";					// The building define
 KP_liberation_air_vehicle_building = "Land_Radar_Small_F";				// The building defined to unlock FOB air vehicle functionality.																		Default is "Land_Radar_Small_F".
 KP_liberation_heli_slot_building = "Land_HelipadSquare_F";				// The helipad used to increase the GLOBAL rotary-wing cap.																				Default is "Land_HelipadSquare_F".
 KP_liberation_plane_slot_building = "Land_TentHangar_V1_F";				// The hangar used to increase the GLOBAL fixed-wing cap.																				Default is "Land_TentHangar_V1_F".
-KP_liberation_supply_crate = "CargoNet_01_box_F";						// This defines the supply crates, as in resources.																						Default is "CargoNet_01_box_F".
-KP_liberation_ammo_crate = "B_CargoNet_01_ammo_F";						// This defines the ammunition crates.																									Default is "B_CargoNet_01_ammo_F".
-KP_liberation_fuel_crate = "CargoNet_01_barrels_F";						// This defines the fuel crates.																										Default is "CargoNet_01_barrels_F".
+KP_liberation_supply_crate = "Land_Boxloader_Crate_1";					// This defines the supply crates, as in resources.																						Default is "CargoNet_01_box_F".
+KP_liberation_ammo_crate = "Land_Boxloader_Case_Green";					// This defines the ammunition crates.																									Default is "B_CargoNet_01_ammo_F".
+KP_liberation_fuel_crate = "Boxloader_drumpallet_fuel";					// This defines the fuel crates.																										Default is "CargoNet_01_barrels_F".
 
 /* - Friendly classnames.
 Each array below represents one of the 7 pages within the build menu. 
@@ -70,6 +70,7 @@ infantry_units = [
 
 light_vehicles = [
 	["B_Quadbike_01_F",50,0,25],										//Quad Bike
+	["rhsusf_mrzr4_d",75,0,25],											//MRZR 4
 	["B_LSV_01_unarmed_F",75,0,50],										//Prowler
 	["B_LSV_01_armed_F",75,40,50],										//Prowler (HMG)
 	["B_LSV_01_AT_F",75,60,50],											//Prowler (AT)
@@ -110,9 +111,9 @@ light_vehicles = [
 ];
 
 heavy_vehicles = [
-	["rhsusf_m113_usarmy",200,40,100],									//M113A3 (M2)
-	["rhsusf_m113_usarmy_MK19",200,60,100],								//M113A3 (Mk19)
-	["rhsusf_m113_usarmy_medical",200,0,100],							//M113A3 (Medical)
+	["rhsusf_m113_usarmy",100,20,50],									//M113A3 (M2)
+	["rhsusf_m113_usarmy_MK19",100,30,50],								//M113A3 (Mk19)
+	["rhsusf_m113_usarmy_medical",100,0,50],							//M113A3 (Medical)
 	["I_LT_01_scout_F",200,0,125],										//AWC 302 Nyx (AA)
 	["B_APC_Wheeled_01_cannon_F",200,75,125],							//AMV-7 Marshall
 	["I_APC_Wheeled_03_cannon_F",200,75,125],							//AFV-4 Gorgon

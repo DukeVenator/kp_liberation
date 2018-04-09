@@ -174,13 +174,13 @@ air_vehicles = [
 	["B_Plane_CAS_01_dynamicLoadout_F",1000,800,400],					//A-164 Wipeout (CAS)
 	["RHS_A10",1000,1000,400],											//A-10A (CAS)
 	["I_Plane_Fighter_04_F",1000,1200,400],								//A-149 Gryphon
-	["FIR_F15C",600,700,250]											//F-15C Eagle
-	["FIR_F15D",600,700,250]											//F-15D Eagle
-	["FIR_F15E",650,800,300]											//F-15E Strike Eagle
-	["FIR_F15K",650,800,300]											//F-15K Slam Eagle
-	["FIR_F16D",850,1000,500]											//F-16D 
-	["FIR_A10C_FT",1000,1000,500]										//A-10C (CAS)
-	["FIR_F22",1500,1500,800]											//F-22
+	["FIR_F15C",600,700,250],											//F-15C Eagle
+	["FIR_F15D",600,700,250],											//F-15D Eagle
+	["FIR_F15E",650,800,300],											//F-15E Strike Eagle
+	["FIR_F15K",650,800,300],											//F-15K Slam Eagle
+	["FIR_F16D",850,1000,500],											//F-16D 
+	["FIR_A10C_FT",1000,1000,500],										//A-10C (CAS)
+	["FIR_F22",1500,1500,800],											//F-22
 	["JS_JC_FA18E",1500,1750,450],										//F/A-18 E Super Hornet
 	["JS_JC_FA18F",1500,1750,450],										//F/A-18 F Super Hornet
 	["B_Plane_Fighter_01_F",1500,1750,450],								//F/A-181 Black Wasp II
