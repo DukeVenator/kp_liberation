@@ -1,3 +1,7 @@
+// Custom Tweaks to sway and stamina
+player setCustomAimCoef 0.34;
+player setUnitRecoilCoefficient 0.40;
+
 if ( isNil "GRLIB_respawn_loadout" ) then {
 	removeAllWeapons player;
 	removeAllItems player;
